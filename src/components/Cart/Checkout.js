@@ -3,6 +3,7 @@ import classes from "./Checkout.module.css";
 const Checkout = (props) => {
   const confirmHandler = (event) => {
     event.preventDefault();
+    props.onConfirm();
   };
 
   return (
